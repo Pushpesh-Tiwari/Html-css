@@ -1,0 +1,49 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 25-Jun-2024, 9:27:08 am
+    Author     : DELL
+*/
+
+ h1 { text-align: center; }
+        .singlebox{
+            text-align:center;
+        }
+        .formtheme{
+            border:inset;
+            border-color: red;
+            margin-top:100px;
+            margin-left:150px;
+            background-color:rgba(255,255,255,0.5);
+            font-family:arial;
+                font-size:20px;
+        }
+        .texttheme{
+            width: 400px;
+            height:40px;
+            background-color:rgba(255,255,255,0.4);
+            font-weight: bold;
+            border-color:navy;
+        }
+        .tabletheme{
+            background-color:rgba(255,255,255,0.7);
+            height:60px;
+            text-align:center;
+            font-family: arial;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        body
+        {
+            background-image: url('images/group-three-modern-architects.jpg');
+                background-size:100%;
+                background-repeat: no-repeat;
+        }
+        h1{
+            color:black;
+            text-transform: uppercase;
+            font-size:50px;
+            font-family: arial;
+        }

@@ -6,7 +6,7 @@
     
     String userId=request.getParameter("id");
     String password=request.getParameter("pwd");
-    String usertyp=request.getParameter("typ");
+    String confpassword=request.getParameter("cnfpwd");
     
       Class.forName("com.mysql.jdbc.Driver");
      Connection con=DriverManager.getConnection(
@@ -20,17 +20,13 @@ con.prepareStatement("select * from registrationtab where id=? and password=?");
      ResultSet rs=st.executeQuery();
      if(rs.next())
      {
-         if(usertyp.equals("Seeker"))
+         if(password.equals(confpassword))
          {
-         response.sendRedirect("seekerauth.jsp");
+      PreparedStatement st1=
+con.prepareStatement("delete from registrationtab where id=?");           
+     st1.setString(1,userId);
+     st1.executeUpdate();
+     response.sendRedirect("home.jsp");
          }
-         if(usertyp.equals("Provider"))
-         {
-         response.sendRedirect("provider_auth.jsp");
-         }
-    }
-     else
-     {
-    response.sendRedirect("login.jsp");
-     }
+    }  
 %>

@@ -1,3 +1,12 @@
+  .contacttheme
+        {
+            width:300px;
+            height:100px;
+            margin-left:750px;
+            margin-top:-400px;
+           
+        }
+      
 .tabtheme{
             height:80px;
             width:100%;
@@ -10,6 +19,7 @@
             
         }
         .formtheme{
+            margin-left:300px;
             border:ridge;
             border-color:gray;
         }
@@ -32,13 +42,6 @@
             color:black;
             text-decoration: none;
         }
-        .contacttheme
-        {
-            width:170px;
-            margin-left:550px;
-            margin-top:-400px;
-            border:inset;
-        }
         .textareatheme
         {
             width: 400px;
@@ -47,6 +50,13 @@
             font-weight: bold;
             border:solid;
             border-color:orange;
-
-            
+        }
+        .centred-text{
+            text-align:center;
+            font-size:20px;
+            color:#ff4500;
+            font-family:sans-serif;
+        }
+        .singlebox{
+            text-align:center;
         }
